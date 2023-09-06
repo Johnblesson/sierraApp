@@ -1,1 +1,1 @@
-## Sierra Church Finder
+# sierraApp with view engine (ejs)
