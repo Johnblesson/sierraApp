@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Church</title>
+    
+    
+<!--Add-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="icon" href="images/search-house.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top navbar-light">
+    <div class="container">
+      <div class="header">
+        <img src="images/search-house.png" alt="" width="40">
+        <a href="/"><h1 class="sierra">SIERRA CHURCH</h1></a>
+    </div>
+      <!-- <div>
+      <a class="navbar-brand" href="/">
+        <img src="images/search-house.png" alt="" width="50" />
+        <h1 class="sierra">SIERRA CHURCH</h1>
+      </a></div> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/map">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/churches">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link btn btn-outline-secondary px-4 mx-4"
+              href="/contact"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--Search-->
+<div class="content-container">
+<div class="search-wrapper">
+  <label for="search"></label>
+  <input type="search" id="search" class="custom-input" placeholder="Search Nearby Church..." data-search>
+  <!-- <div class="select-container"> -->
+    <select id="locationSearch" class="custom-select" placeholder="Search by Location">
+      <option value="">Select Location</option>
+      <!-- <option value="">Hill Station</option>
+      <option value="">Goderich</option>
+      <option value="">St. John</option>
+      <option value="">Bo City</option>
+      <option value="">Waterloo</option> -->
+      <!-- Add more options here -->
+  </select>
+  
+</div>
+</div>
+<div class="container mx-auto">
+  <h1 class="text-center text-4xl text-indigo-400 py-12 font-bold">Sierra Church Finder</h1>
+  <div class="table-responsive">
+      <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-50">
+              <tr>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Church</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Contact</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Location</th>
+              </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200" id="tbody">
+             
+          </tbody>
+      </table>
+  </div>
+</div>
+</section>
+    <script src="js/script.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- Brevo Conversations {literal} -->
+        <script>
+          (function(d, w, c) {
+              w.BrevoConversationsID = '64d16e3a70d0936f101f6bc7';
+              w[c] = w[c] || function() {
+                  (w[c].q = w[c].q || []).push(arguments);
+              };
+              var s = d.createElement('script');
+              s.async = true;
+              s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+              if (d.head) d.head.appendChild(s);
+          })(document, window, 'BrevoConversations');
+        </script>
+        <!-- /Brevo Conversations {/literal} -->
+</body>
+</html>
